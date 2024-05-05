@@ -1,0 +1,110 @@
+.zr-icon-base {
+    transform: translate(0, 0);
+    background-size: contain;
+    background-position: center;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat
+}
+
+#footerWrap {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 15px
+}
+
+#footerWrap .ccpa_legal {
+    text-align: center;
+    margin: 0 auto 12px;
+    color: #72777c;
+    font-size: 11px
+}
+
+#footerWrap .ccpa_legal a {
+    position: relative;
+    color: #72777c;
+    margin-left: 3px
+}
+
+#footerWrap .ccpa_legal a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -35px;
+    height: 13px;
+    width: 32px;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjMuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzMCAxNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzAgMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojRkZGRkZGO30KCS5zdDF7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojMDA2NkZGO30KCS5zdDJ7ZmlsbDojRkZGRkZGO30KCS5zdDN7ZmlsbDojMDA2NkZGO30KPC9zdHlsZT4KPGc+Cgk8ZyBpZD0iZmluYWwtLS1kZWMuMTEtMjAyMF8xXyI+CgkJPGcgaWQ9Il94MzBfMjA4LW91ci10b2dnbGVfMl8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjc1LjAwMDAwMCwgLTIwMC4wMDAwMDApIj4KCQkJPGcgaWQ9IkZpbmFsLUNvcHktMl8yXyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI3NS4wMDAwMDAsIDIwMC4wMDAwMDApIj4KCQkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik03LjQsMTIuOGg2LjhsMy4xLTExLjZINy40QzQuMiwxLjIsMS42LDMuOCwxLjYsN1M0LjIsMTIuOCw3LjQsMTIuOHoiLz4KCQkJPC9nPgoJCTwvZz4KCTwvZz4KCTxnIGlkPSJmaW5hbC0tLWRlYy4xMS0yMDIwIj4KCQk8ZyBpZD0iX3gzMF8yMDgtb3VyLXRvZ2dsZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyNzUuMDAwMDAwLCAtMjAwLjAwMDAwMCkiPgoJCQk8ZyBpZD0iRmluYWwtQ29weS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjc1LjAwMDAwMCwgMjAwLjAwMDAwMCkiPgoJCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTIyLjYsMEg3LjRjLTMuOSwwLTcsMy4xLTcsN3MzLjEsNyw3LDdoMTUuMmMzLjksMCw3LTMuMSw3LTdTMjYuNCwwLDIyLjYsMHogTTEuNiw3YzAtMy4yLDIuNi01LjgsNS44LTUuOAoJCQkJCWg5LjlsLTMuMSwxMS42SDcuNEM0LjIsMTIuOCwxLjYsMTAuMiwxLjYsN3oiLz4KCQkJCTxwYXRoIGlkPSJ4IiBjbGFzcz0ic3QyIiBkPSJNMjQuNiw0YzAuMiwwLjIsMC4yLDAuNiwwLDAuOGwwLDBMMjIuNSw3bDIuMiwyLjJjMC4yLDAuMiwwLjIsMC42LDAsMC44Yy0wLjIsMC4yLTAuNiwwLjItMC44LDAKCQkJCQlsMCwwbC0yLjItMi4yTDE5LjUsMTBjLTAuMiwwLjItMC42LDAuMi0wLjgsMGMtMC4yLTAuMi0wLjItMC42LDAtMC44bDAsMEwyMC44LDdsLTIuMi0yLjJjLTAuMi0wLjItMC4yLTAuNiwwLTAuOAoJCQkJCWMwLjItMC4yLDAuNi0wLjIsMC44LDBsMCwwbDIuMiwyLjJMMjMuOCw0QzI0LDMuOCwyNC40LDMuOCwyNC42LDR6Ii8+CgkJCQk8cGF0aCBpZD0ieSIgY2xhc3M9InN0MyIgZD0iTTEyLjcsNC4xYzAuMiwwLjIsMC4zLDAuNiwwLjEsMC44bDAsMEw4LjYsOS44QzguNSw5LjksOC40LDEwLDguMywxMGMtMC4yLDAuMS0wLjUsMC4xLTAuNy0wLjFsMCwwCgkJCQkJTDUuNCw3LjdjLTAuMi0wLjItMC4yLTAuNiwwLTAuOGMwLjItMC4yLDAuNi0wLjIsMC44LDBsMCwwTDgsOC42bDMuOC00LjVDMTIsMy45LDEyLjQsMy45LDEyLjcsNC4xeiIvPgoJCQk8L2c+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=');
+    background-repeat: no-repeat
+}
+
+@media all and (max-width:479px) {
+    #footerWrap .ccpa_legal a {
+        display: table;
+        margin: 5px auto
+    }
+}
+
+#footerWrap .user-footer {
+    text-align: center;
+    margin: 35px auto 0;
+    color: #72777c;
+    font-size: 11px
+}
+
+#footerWrap .user-footer ul {
+    display: block;
+    margin: 0
+}
+
+#footerWrap .user-footer ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 3px;
+    line-height: 1.3;
+    color: #72777c;
+    margin: 4px 0
+}
+
+#footerWrap .user-footer ul li::after {
+    content: '|';
+    color: #d8dbdc;
+    margin: 0 0 0 6px
+}
+
+#footerWrap .user-footer ul li:last-of-type::after {
+    display: none
+}
+
+#footerWrap .user-footer ul li a {
+    color: #72777c
+}
+
+#footerWrap .user-footer .copyright {
+    margin: 10px 0 0
+}
+
+@media all and (max-width:767px) {
+    #footerWrap .user-footer {
+        padding-bottom: 20px;
+        position: static;
+        padding-top: 15px;
+        text-align: center
+    }
+    #footerWrap .user-footer ul {
+        width: 100%;
+        margin: 0 auto
+    }
+    #footerWrap .user-footer ul li .legalLink {
+        margin: 0
+    }
+}
+
+@media all and (max-width:767px) {
+    body.toggled #footerWrap {
+        display: none
+    }
+}

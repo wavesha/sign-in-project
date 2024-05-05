@@ -1,0 +1,11 @@
+{
+  "name": "kaziyako hub",
+  "short_name": "kaziyako hub",
+  "icons": [{
+    "src": "../search jobs/images/logo.svg",
+    "sizes": "192x192"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "819446331585"
+}

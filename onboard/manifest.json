@@ -1,0 +1,11 @@
+{
+  "name": "ZipRecruiter",
+  "short_name": "ZipRecruiter",
+  "icons": [{
+    "src": "/img/ziprecruiter-logo-192px.png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "819446331585"
+}

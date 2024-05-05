@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = "/zrs/starterview/285903b9/js/vendor/ckeditor/4.15.1/";

@@ -1,0 +1,1080 @@
+.zr-icon-base,
+.reset_message.has_icon>:first-child::before,
+.reset_message .message_header:before {
+    transform: translate(0, 0);
+    background-size: contain;
+    background-position: center;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat
+}
+
+.border-tabs {
+    display: flex;
+    justify-content: center
+}
+
+.border-tabs .highlightedTabBorder {
+    background-color: #e0e2e3;
+    border-radius: 4px 4px 0 0;
+    content: " ";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all .08s linear
+}
+
+.border-tabs>li>a {
+    position: relative;
+    display: block;
+    padding: 18px 15px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 1.3
+}
+
+@media all and (max-width:991px) {
+    .border-tabs>li>a {
+        padding: 18px 10px;
+        margin: 0 3px
+    }
+}
+
+.border-tabs>li>a:link,
+.border-tabs>li>a:visited,
+.border-tabs>li>a:active {
+    background: transparent none;
+    color: #72777c
+}
+
+.border-tabs>li>a:link:before,
+.border-tabs>li>a:visited:before,
+.border-tabs>li>a:active:before {
+    background-color: #e0e2e3;
+    border-radius: 4px 4px 0 0;
+    content: " ";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all .08s linear;
+    left: 50%;
+    width: 0
+}
+
+.border-tabs>li>a:hover {
+    color: #2f3639;
+    text-decoration: none
+}
+
+.border-tabs>li>a:hover:before {
+    background-color: #e0e2e3;
+    border-radius: 4px 4px 0 0;
+    content: " ";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all .08s linear
+}
+
+.border-tabs>li.active>a:link,
+.border-tabs>li.active>a:visited,
+.border-tabs>li.active>a:focus,
+.border-tabs>li.active>a:hover {
+    background: transparent none;
+    color: #2f3639;
+    font-weight: bold
+}
+
+.border-tabs>li.active>a:link:before,
+.border-tabs>li.active>a:visited:before,
+.border-tabs>li.active>a:focus:before,
+.border-tabs>li.active>a:hover:before {
+    background-color: #e0e2e3;
+    border-radius: 4px 4px 0 0;
+    content: " ";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all .08s linear;
+    background-color: #277f6a
+}
+
+.border-tabs>li.active>a:hover:before {
+    background-color: #e0e2e3;
+    border-radius: 4px 4px 0 0;
+    content: " ";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all .08s linear;
+    background-color: #005e4d
+}
+
+.border-tabs::after {
+    display: table;
+    content: " ";
+    clear: both
+}
+
+.login_panel_wrap {
+    width: 100%;
+    max-width: 850px;
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+body.loginPage #loginTab {
+    display: none
+}
+
+@media all and (max-width:767px) {
+    body.loginPage #tabContact {
+        border-right: 0
+    }
+}
+
+#realm_block {
+    display: none
+}
+
+.login_form>div {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1;
+    position: relative
+}
+
+.login_form>div input:not([type=checkbox]),
+.login_form>div select,
+.login_form>div textarea,
+.login_form>div .input-wrapper {
+    font-size: 14px;
+    line-height: normal;
+    padding: 13px 12px
+}
+
+.login_form>div label:first-of-type {
+    color: #72777c;
+    font-size: 14px;
+    line-height: normal;
+    padding: 13px 12px;
+    border: 0;
+    cursor: text;
+    font-weight: normal;
+    left: 1px;
+    top: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    text-align: left;
+    text-overflow: ellipsis;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1
+}
+
+.login_form>div.filled label:first-of-type,
+.login_form>div.focused label:first-of-type {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 7px 12px 2px
+}
+
+.login_form>div.filled input:not([type=checkbox]),
+.login_form>div.focused input:not([type=checkbox]),
+.login_form>div.filled select,
+.login_form>div.focused select,
+.login_form>div.filled textarea,
+.login_form>div.focused textarea,
+.login_form>div.filled .RichTextareaField,
+.login_form>div.focused .RichTextareaField,
+.login_form>div.filled .input-wrapper,
+.login_form>div.focused .input-wrapper {
+    padding: 21px 12px 5px
+}
+
+.login_form>div.filled input:not([type=checkbox])::-ms-clear,
+.login_form>div.focused input:not([type=checkbox])::-ms-clear,
+.login_form>div.filled select::-ms-clear,
+.login_form>div.focused select::-ms-clear,
+.login_form>div.filled textarea::-ms-clear,
+.login_form>div.focused textarea::-ms-clear,
+.login_form>div.filled .RichTextareaField::-ms-clear,
+.login_form>div.focused .RichTextareaField::-ms-clear,
+.login_form>div.filled .input-wrapper::-ms-clear,
+.login_form>div.focused .input-wrapper::-ms-clear,
+.login_form>div.filled input:not([type=checkbox])::-ms-reveal,
+.login_form>div.focused input:not([type=checkbox])::-ms-reveal,
+.login_form>div.filled select::-ms-reveal,
+.login_form>div.focused select::-ms-reveal,
+.login_form>div.filled textarea::-ms-reveal,
+.login_form>div.focused textarea::-ms-reveal,
+.login_form>div.filled .RichTextareaField::-ms-reveal,
+.login_form>div.focused .RichTextareaField::-ms-reveal,
+.login_form>div.filled .input-wrapper::-ms-reveal,
+.login_form>div.focused .input-wrapper::-ms-reveal {
+    transform: translateY(-7px)
+}
+
+.login_form>div.select label:first-of-type {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden
+}
+
+.login_form>div.select select {
+    color: #72777c
+}
+
+.login_form>div.select select option {
+    color: #2f3639
+}
+
+.login_form>div.select.filled label:first-of-type,
+.login_form>div.select.focused label:first-of-type {
+    clip: auto;
+    padding: 7px 12px 2px !important;
+    height: auto !important;
+    width: 100% !important
+}
+
+.login_form>div.select.filled select,
+.login_form>div.select.focused select {
+    color: #2f3639
+}
+
+.login_form>div.textarea label:first-of-type {
+    width: calc(100% - 20px)
+}
+
+.login_form>div.textarea textarea {
+    padding-right: 20px
+}
+
+.login_form>div.textarea.filled label:first-of-type,
+.login_form>div.textarea.focused label:first-of-type {
+    background: white
+}
+
+.login_form>div.textarea.filled textarea,
+.login_form>div.textarea.focused textarea {
+    line-height: 21px
+}
+
+.login_form>div.RichTextareaField label,
+.login_form>div.FormikRichTextareaField label {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 11px 2px !important;
+    height: auto !important;
+    width: auto !important;
+    clip: auto
+}
+
+.login_form>div.RichTextareaField.empty .pell-content p,
+.login_form>div.FormikRichTextareaField.empty .pell-content p {
+    margin-top: 6px
+}
+
+.login_form>div.RichTextareaField.empty label,
+.login_form>div.FormikRichTextareaField.empty label {
+    font-size: 16px;
+    padding: 20px 12px 2px !important;
+    height: auto !important;
+    width: auto !important;
+    clip: auto
+}
+
+.login_form>div.RichTextareaField.filled label,
+.login_form>div.FormikRichTextareaField.filled label,
+.login_form>div.RichTextareaField.focused label,
+.login_form>div.FormikRichTextareaField.focused label {
+    background: #fff;
+    width: calc(100% - 22px) !important
+}
+
+#signInForm .hide_toggle #btn_block {
+    display: none
+}
+
+.loginLinks {
+    padding: 35px 0 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: table
+}
+
+.loginLinks .loginLinkList li {
+    display: inline-block;
+    padding: 0 10px 0 7px;
+    border-right: 1px solid #d8dbdc;
+    line-height: 1.8;
+    font-size: 11px
+}
+
+.loginLinks .loginLinkList li:last-child {
+    border-right: 0;
+    padding-right: 0
+}
+
+.login_panel {
+    background-color: #fff;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.05), 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 500px;
+    display: table
+}
+
+@media 0 {
+    .login_panel {
+        padding: 0
+    }
+}
+
+.login_panel .login_toggle {
+    margin-bottom: 15px;
+    margin: 0 auto 15px;
+    width: 100%;
+    text-align: center;
+    max-width: 340px
+}
+
+.login_panel .login_toggle li {
+    display: inline-block;
+    float: none;
+    width: 48%;
+    margin: 0 2px
+}
+
+.login_panel .login_toggle li a:link,
+.login_panel .login_toggle li a:visited {
+    outline-width: 0
+}
+
+.login_panel .login_panel_body {
+    padding: 25px
+}
+
+@media all and (max-width:767px) {
+    .login_panel .login_panel_body {
+        padding: 15px
+    }
+}
+
+.login_panel .login_panel_footer {
+    background: #f8f9fa none;
+    border-top: 1px solid #e0e2e3;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-align: center;
+    padding: 15px
+}
+
+.login_panel .login_panel_footer a:link,
+.login_panel .login_panel_footer a:visited {
+    color: #72777c
+}
+
+.login_panel .login_panel_footer a:hover,
+.login_panel .login_panel_footer a:focus {
+    color: #2f3639
+}
+
+.login_panel .header {
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.login_panel .subheader {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px
+}
+
+.login_panel .validate_error_label {
+    color: #d22;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px
+}
+
+.login_panel input.btn {
+    display: table;
+    margin: 20px auto 0
+}
+
+.login_panel input.btn,
+.login_panel input[type="password"],
+.login_panel input[type="email"] {
+    width: 100%
+}
+
+.login_panel .alert {
+    margin-bottom: 30px
+}
+
+.forgot_password .email {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1;
+    position: relative
+}
+
+.forgot_password .email input:not([type=checkbox]),
+.forgot_password .email select,
+.forgot_password .email textarea,
+.forgot_password .email .input-wrapper {
+    font-size: 14px;
+    line-height: normal;
+    padding: 13px 12px
+}
+
+.forgot_password .email label:first-of-type {
+    color: #72777c;
+    font-size: 14px;
+    line-height: normal;
+    padding: 13px 12px;
+    border: 0;
+    cursor: text;
+    font-weight: normal;
+    left: 1px;
+    top: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    text-align: left;
+    text-overflow: ellipsis;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1
+}
+
+.forgot_password .email.filled label:first-of-type,
+.forgot_password .email.focused label:first-of-type {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 7px 12px 2px
+}
+
+.forgot_password .email.filled input:not([type=checkbox]),
+.forgot_password .email.focused input:not([type=checkbox]),
+.forgot_password .email.filled select,
+.forgot_password .email.focused select,
+.forgot_password .email.filled textarea,
+.forgot_password .email.focused textarea,
+.forgot_password .email.filled .RichTextareaField,
+.forgot_password .email.focused .RichTextareaField,
+.forgot_password .email.filled .input-wrapper,
+.forgot_password .email.focused .input-wrapper {
+    padding: 21px 12px 5px
+}
+
+.forgot_password .email.filled input:not([type=checkbox])::-ms-clear,
+.forgot_password .email.focused input:not([type=checkbox])::-ms-clear,
+.forgot_password .email.filled select::-ms-clear,
+.forgot_password .email.focused select::-ms-clear,
+.forgot_password .email.filled textarea::-ms-clear,
+.forgot_password .email.focused textarea::-ms-clear,
+.forgot_password .email.filled .RichTextareaField::-ms-clear,
+.forgot_password .email.focused .RichTextareaField::-ms-clear,
+.forgot_password .email.filled .input-wrapper::-ms-clear,
+.forgot_password .email.focused .input-wrapper::-ms-clear,
+.forgot_password .email.filled input:not([type=checkbox])::-ms-reveal,
+.forgot_password .email.focused input:not([type=checkbox])::-ms-reveal,
+.forgot_password .email.filled select::-ms-reveal,
+.forgot_password .email.focused select::-ms-reveal,
+.forgot_password .email.filled textarea::-ms-reveal,
+.forgot_password .email.focused textarea::-ms-reveal,
+.forgot_password .email.filled .RichTextareaField::-ms-reveal,
+.forgot_password .email.focused .RichTextareaField::-ms-reveal,
+.forgot_password .email.filled .input-wrapper::-ms-reveal,
+.forgot_password .email.focused .input-wrapper::-ms-reveal {
+    transform: translateY(-7px)
+}
+
+.forgot_password .email.select label:first-of-type {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden
+}
+
+.forgot_password .email.select select {
+    color: #72777c
+}
+
+.forgot_password .email.select select option {
+    color: #2f3639
+}
+
+.forgot_password .email.select.filled label:first-of-type,
+.forgot_password .email.select.focused label:first-of-type {
+    clip: auto;
+    padding: 7px 12px 2px !important;
+    height: auto !important;
+    width: 100% !important
+}
+
+.forgot_password .email.select.filled select,
+.forgot_password .email.select.focused select {
+    color: #2f3639
+}
+
+.forgot_password .email.textarea label:first-of-type {
+    width: calc(100% - 20px)
+}
+
+.forgot_password .email.textarea textarea {
+    padding-right: 20px
+}
+
+.forgot_password .email.textarea.filled label:first-of-type,
+.forgot_password .email.textarea.focused label:first-of-type {
+    background: white
+}
+
+.forgot_password .email.textarea.filled textarea,
+.forgot_password .email.textarea.focused textarea {
+    line-height: 21px
+}
+
+.forgot_password .email.RichTextareaField label,
+.forgot_password .email.FormikRichTextareaField label {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 11px 2px !important;
+    height: auto !important;
+    width: auto !important;
+    clip: auto
+}
+
+.forgot_password .email.RichTextareaField.empty .pell-content p,
+.forgot_password .email.FormikRichTextareaField.empty .pell-content p {
+    margin-top: 6px
+}
+
+.forgot_password .email.RichTextareaField.empty label,
+.forgot_password .email.FormikRichTextareaField.empty label {
+    font-size: 16px;
+    padding: 20px 12px 2px !important;
+    height: auto !important;
+    width: auto !important;
+    clip: auto
+}
+
+.forgot_password .email.RichTextareaField.filled label,
+.forgot_password .email.FormikRichTextareaField.filled label,
+.forgot_password .email.RichTextareaField.focused label,
+.forgot_password .email.FormikRichTextareaField.focused label {
+    background: #fff;
+    width: calc(100% - 22px) !important
+}
+
+.reset_password .password {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1;
+    position: relative
+}
+
+.reset_password .password input:not([type=checkbox]),
+.reset_password .password select,
+.reset_password .password textarea,
+.reset_password .password .input-wrapper {
+    font-size: 14px;
+    line-height: normal;
+    padding: 13px 12px
+}
+
+.reset_password .password label:first-of-type {
+    color: #72777c;
+    font-size: 14px;
+    line-height: normal;
+    padding: 13px 12px;
+    border: 0;
+    cursor: text;
+    font-weight: normal;
+    left: 1px;
+    top: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    text-align: left;
+    text-overflow: ellipsis;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1
+}
+
+.reset_password .password.filled label:first-of-type,
+.reset_password .password.focused label:first-of-type {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 7px 12px 2px
+}
+
+.reset_password .password.filled input:not([type=checkbox]),
+.reset_password .password.focused input:not([type=checkbox]),
+.reset_password .password.filled select,
+.reset_password .password.focused select,
+.reset_password .password.filled textarea,
+.reset_password .password.focused textarea,
+.reset_password .password.filled .RichTextareaField,
+.reset_password .password.focused .RichTextareaField,
+.reset_password .password.filled .input-wrapper,
+.reset_password .password.focused .input-wrapper {
+    padding: 21px 12px 5px
+}
+
+.reset_password .password.filled input:not([type=checkbox])::-ms-clear,
+.reset_password .password.focused input:not([type=checkbox])::-ms-clear,
+.reset_password .password.filled select::-ms-clear,
+.reset_password .password.focused select::-ms-clear,
+.reset_password .password.filled textarea::-ms-clear,
+.reset_password .password.focused textarea::-ms-clear,
+.reset_password .password.filled .RichTextareaField::-ms-clear,
+.reset_password .password.focused .RichTextareaField::-ms-clear,
+.reset_password .password.filled .input-wrapper::-ms-clear,
+.reset_password .password.focused .input-wrapper::-ms-clear,
+.reset_password .password.filled input:not([type=checkbox])::-ms-reveal,
+.reset_password .password.focused input:not([type=checkbox])::-ms-reveal,
+.reset_password .password.filled select::-ms-reveal,
+.reset_password .password.focused select::-ms-reveal,
+.reset_password .password.filled textarea::-ms-reveal,
+.reset_password .password.focused textarea::-ms-reveal,
+.reset_password .password.filled .RichTextareaField::-ms-reveal,
+.reset_password .password.focused .RichTextareaField::-ms-reveal,
+.reset_password .password.filled .input-wrapper::-ms-reveal,
+.reset_password .password.focused .input-wrapper::-ms-reveal {
+    transform: translateY(-7px)
+}
+
+.reset_password .password.select label:first-of-type {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden
+}
+
+.reset_password .password.select select {
+    color: #72777c
+}
+
+.reset_password .password.select select option {
+    color: #2f3639
+}
+
+.reset_password .password.select.filled label:first-of-type,
+.reset_password .password.select.focused label:first-of-type {
+    clip: auto;
+    padding: 7px 12px 2px !important;
+    height: auto !important;
+    width: 100% !important
+}
+
+.reset_password .password.select.filled select,
+.reset_password .password.select.focused select {
+    color: #2f3639
+}
+
+.reset_password .password.textarea label:first-of-type {
+    width: calc(100% - 20px)
+}
+
+.reset_password .password.textarea textarea {
+    padding-right: 20px
+}
+
+.reset_password .password.textarea.filled label:first-of-type,
+.reset_password .password.textarea.focused label:first-of-type {
+    background: white
+}
+
+.reset_password .password.textarea.filled textarea,
+.reset_password .password.textarea.focused textarea {
+    line-height: 21px
+}
+
+.reset_password .password.RichTextareaField label,
+.reset_password .password.FormikRichTextareaField label {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 11px 2px !important;
+    height: auto !important;
+    width: auto !important;
+    clip: auto
+}
+
+.reset_password .password.RichTextareaField.empty .pell-content p,
+.reset_password .password.FormikRichTextareaField.empty .pell-content p {
+    margin-top: 6px
+}
+
+.reset_password .password.RichTextareaField.empty label,
+.reset_password .password.FormikRichTextareaField.empty label {
+    font-size: 16px;
+    padding: 20px 12px 2px !important;
+    height: auto !important;
+    width: auto !important;
+    clip: auto
+}
+
+.reset_password .password.RichTextareaField.filled label,
+.reset_password .password.FormikRichTextareaField.filled label,
+.reset_password .password.RichTextareaField.focused label,
+.reset_password .password.FormikRichTextareaField.focused label {
+    background: #fff;
+    width: calc(100% - 22px) !important
+}
+
+#reset_password .checkbox.label {
+    padding: 0 0 0 20px
+}
+
+#reset_password .checkbox.label #showPasswordCheckbox {
+    left: 0
+}
+
+body.loginPage .login_panel .header {
+    margin-bottom: 10px
+}
+
+.existing_user_alert {
+    padding: 20px
+}
+
+.existing_user_alert .alert_header {
+    font-size: 19px;
+    margin: 0 auto 10px;
+    line-height: 1.5
+}
+
+.reset_message {
+    margin-bottom: 15px;
+    border-radius: 6px;
+    line-height: 1.5em;
+    padding: 13px;
+    padding-right: 1.8em;
+    transition: opacity .4s linear;
+    position: relative;
+    border: 1px solid #d8dbdc;
+    border-top-width: 6px;
+    background-color: #fff;
+    color: #2f3639;
+    background-color: #fffce7;
+    border-color: #ffe045;
+    border-top-color: #f2c406;
+    padding: 20px;
+    margin-bottom: 0
+}
+
+.reset_message.not_dismissable {
+    padding-right: 13px
+}
+
+.reset_message .message_header {
+    font-size: 16px;
+    margin-bottom: 3px;
+    line-height: 1.5;
+    font-weight: bold
+}
+
+.reset_message p {
+    line-height: 1.7;
+    font-size: 13px;
+    margin-bottom: 0
+}
+
+.reset_message strong {
+    font-weight: bold
+}
+
+.reset_message.delay-hiding {
+    opacity: 0
+}
+
+.reset_message .close_message {
+    -webkit-appearance: none;
+    border-radius: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    font: inherit;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 200%;
+    outline: 0;
+    font-weight: 400;
+    font-size: 26px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    position: absolute;
+    top: .1em;
+    right: .2em
+}
+
+.reset_message .close_message::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+.reset_message .close_message::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    content: "\00d7";
+    opacity: .6;
+    text-indent: 0;
+    color: #2f3639;
+    line-height: 0;
+    transition: all .15s linear;
+    text-shadow: none
+}
+
+.reset_message .close_message:hover::before,
+.reset_message .close_message:focus::before {
+    opacity: 1
+}
+
+.reset_message .close_message:before {
+    color: #72777c
+}
+
+.reset_message.toast_message {
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.05), 0 9px 12px rgba(0, 0, 0, 0.1);
+    left: 50%;
+    max-width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    text-align: center;
+    top: 5px;
+    transition: all 500ms ease;
+    transform: translate(-50%, -500%);
+    width: 90%;
+    z-index: 10000;
+    background-color: #0e75e2;
+    color: #fff;
+    border-width: 0
+}
+
+.reset_message.toast_message.showing,
+.reset_message.toast_message.bubble_show {
+    transform: translate(-50%, 0)
+}
+
+.reset_message.toast_message.showing.linger,
+.reset_message.toast_message.bubble_show.linger {
+    opacity: 1;
+    pointer-events: all
+}
+
+.reset_message.toast_message p {
+    font-size: 12px;
+    line-height: 1.3
+}
+
+.reset_message.toast_message.linger {
+    transform: translate(-50%, 0);
+    opacity: 0;
+    pointer-events: none
+}
+
+.reset_message.toast_message.roaming {
+    width: auto;
+    max-width: 280px;
+    text-align: left;
+    padding: 20px 27px 20px 20px
+}
+
+.reset_message.toast_message .close_message::before {
+    color: #fff
+}
+
+.reset_message.toast_message {
+    background-color: #ffaf57
+}
+
+.reset_message.has_icon>:first-child::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z' fill='%23f2c406'/%3E%3C/svg%3E");
+    font-size: 17px;
+    vertical-align: middle;
+    margin: -2px 4px 0 0
+}
+
+.reset_message .message_header {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+.reset_message .message_header:before {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z' fill='%23277f6a'/%3E%3C/svg%3E");
+    margin: -3px 5px 0 0;
+    vertical-align: middle
+}
+
+.reset_message .message_text {
+    margin-bottom: 10px;
+    word-break: break-word
+}
+
+.reset_message .message_text:last-child {
+    margin-bottom: 0
+}
+
+.zrs_message_success.application_submitted_alert {
+    padding: 20px;
+    width: 100%
+}
+
+.grecaptcha-badge {
+    margin: 25px auto 0;
+    box-shadow: none !important;
+    outline: 1px solid #dee0e1
+}
+
+.employer_login_disabled {
+    display: none
+}
+
+.realm_members.disable_employer_login .employer_login_disabled {
+    display: block
+}
+
+.realm_members.disable_employer_login .user_create_form_min_outer .email,
+.realm_members.disable_employer_login .user_create_form_min_outer .password,
+.realm_members.disable_employer_login .user_create_form_min_outer .submit {
+    display: none
+}
+
+.realm_members.disable_employer_login .google_login,
+.realm_members.disable_employer_login .login_panel_footer {
+    display: none
+}
+
+.realm_members iframe[src^="https://smartlock.google.com"] {
+    display: none
+}
+
+.login_links {
+    margin: 20px auto 0;
+    text-align: center
+}
+
+.signup_link_employer {
+    display: none
+}
+
+.realm_members .signup_link_jobseeker {
+    display: none
+}
+
+.realm_members .signup_link_employer {
+    display: block
+}
+
+.truste_wrapper {
+    display: table;
+    margin: 25px auto 0
+}

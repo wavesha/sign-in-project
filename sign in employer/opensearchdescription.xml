@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>kaziyako hub</ShortName>
+  <Description>Search for jobs using kaziyako hub.</Description>
+  <Tags>jobs kaziyako hub</Tags>
+  <Url type="text/html" template="#" />
+  <Image height="16" width="16" type="image/x-icon">../images/logo.svg</Image>
+</OpenSearchDescription>

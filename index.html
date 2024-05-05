@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>kaziyako hub Job Seeker Login | Sign-In Today</title>
+
+    <meta name="description" content="kaziyako hub job seekers login page.  Sign into your kaziyako hub job seeker account. Find your next job opportunity today!">
+    <meta name="robots" content="follow,index">
+    <link rel="canonical" href="kaziyakohub.co.ke/authn/login">
+    <link rel="manifest" href="../sign in/manifest.json">
+
+
+
+    <script type="application/ld+json"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="kaziyako hub">
+    <meta name="application-name" content="kaziyako hub">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../job seekers/search jobs/images/logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../job seekers/search jobs/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="../job seekers/search jobs/images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="../job seekers/search jobs/images/favicon.ico" color="#277F6A">
+
+
+    <meta property="og:title" content="kaziyako hub Job Seeker Login | Sign-In Today">
+    <meta property="og:url" content="kaziyakohub.co.ke/authn/login">
+    <meta property="og:site_name" content="kaziyako hub">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="kaziyako hub job seekers login page.  Sign into your kaziyako hub job seeker account. Find your next job opportunity today!">
+    <meta property="og:image" content="../job seekers/search jobs/images/logo.svg">
+
+
+
+    <script defer nomodule src="/njs/authn/vendors/co.3c849fc8.js"></script>
+
+    <script defer nomodule src="/njs/authn/vendors/promise.df3e9da5.js"></script>
+
+    <script defer nomodule src="/njs/authn/vendors/what.9bce7416.js"></script>
+
+    <script defer nomodule src="/njs/authn/polyfills.a3d28b93.js"></script>
+
+
+
+
+    <script defer src="../sign in/javascript/runtime.f1d94048.js"></script>
+
+    <script defer src="../sign in/javascript/jquery.156ede10.js"></script>
+
+    <script defer src="../sign in/javascript/@babel.5ede3d7c.js"></script>
+
+    <script defer src="../sign in/javascript/react.65c9f7f5.js"></script>
+
+    <script defer src="../sign in/javascript/lodash.a7cac95e.js"></script>
+
+    <script defer src="../sign in/javascript/login.6fa19ef1.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="../sign in/css.css" type="text/css" media="all">
+
+
+    <script>
+        (function(send, open, setRequestHeader, submit) {
+            'use strict';
+
+            // Get safesave cookie
+            var getToken = function() {
+                var tokenMatch = document.cookie.match(/SAFESAVE_TOKEN=([^;]+)/);
+                return tokenMatch ? tokenMatch[1] : '';
+            };
+
+            // Monkeypatch ajax open
+            // We want to cache the url so we know if we should bother with headers
+            XMLHttpRequest.prototype.open = function() {
+                this.__url = arguments[1];
+
+                open.apply(this, arguments);
+            };
+
+            // Monkeypatch ajax setRequestHeader
+            // We want to make sure we don't set the X-Requested-With header twice, since it just appends the value
+            XMLHttpRequest.prototype.setRequestHeader = function(name /* , value */ ) {
+                if (name.toLowerCase() === 'x-requested-with') {
+                    this.__xrwset = true;
+                }
+
+                return setRequestHeader.apply(this, arguments);
+            };
+
+            // Monkeypatch ajax send
+            // Here we add the headers our backend is expecting
+            XMLHttpRequest.prototype.send = function() {
+                var link = document.createElement('a');
+                link.setAttribute('href', this.__url);
+
+                // Only do this for same-domain to prevent CORS issues
+                if (link.host === window.location.host) {
+                    // jQuery-like header server checks for ajax calls for CORS checking
+                    if (!this.__xrwset) {
+                        setRequestHeader.call(this, 'X-Requested-With', 'XMLHttpRequest');
+                    }
+
+                    // Sending over the current URL for event tracking
+                    this.setRequestHeader('Document-Location-Href', window.location.href);
+                }
+
+                return send.apply(this, arguments);
+            };
+
+            // add a token to an html form
+            var addTokenToForm = function(target) {
+                if (target && target.nodeName === 'FORM' && target.method === 'post') {
+                    var input = document.createElement('input');
+                    input.setAttribute('type', 'hidden');
+                    input.setAttribute('name', '_safesave');
+                    input.setAttribute('value', getToken());
+                    target.appendChild(input);
+                }
+            };
+
+            // monkey patching javascript .submit
+            HTMLFormElement.prototype.submit = function() {
+                addTokenToForm(this);
+                submit.apply(this, arguments);
+            };
+
+            // Delegate form submits
+            document.addEventListener('submit', function(event) {
+                addTokenToForm(event.target);
+            });
+        }(XMLHttpRequest.prototype.send, XMLHttpRequest.prototype.open, XMLHttpRequest.prototype.setRequestHeader,
+            HTMLFormElement.prototype.submit));
+    </script>
+
+</head>
+
+
+<body class=" ">
+
+    <a class="skip_to_content" href="#main">Skip To Main Content</a>
+
+
+
+
+
+
+
+
+    <header class="site_header">
+        <div class="content">
+            <div class="top_header_wrap">
+                <a class="brand" href="/">
+       
+      </a>
+
+                <a href="../post a job/post a job/post a job.html" class="post_a_job_link mobile_only">
+        Post a Job
+      </a>
+
+                <button data-header-nav-toggle class="hamburger_btn mobile_only" aria-label="open nav" aria-haspopup="true" aria-expanded="false">
+        <span class="hamburger_box"><span class="hamburger_inner"></span></span>
+      </button>
+            </div>
+
+
+            <nav data-header-nav class="header_nav" aria-label="Main">
+                <section data-header-nav-section class="nav_section">
+                    <button class="nav_btn" data-header-nav-section-toggle aria-haspopup="true" aria-expanded="false">
+      Job Seekers
+    </button>
+
+                    <div class="nav_submenu">
+                        <a class="nav_link" href="/Search-Jobs-Near-Me">
+         Search Jobs
+      </a>
+                        <a class="nav_link" href="/Salaries#intsrc=zr.authn.header">
+       Search Salaries
+      </a>
+                        <a class="nav_link" href="/job-seeker-reviews#intsrc=zr.authn.header">
+        Job Seeker Reviews
+      </a>
+                        <a class="nav_link" class="job_seeker_get_the_app_link" href="/mobile-app-redirect?area=_header_light#intsrc=zr.authn.header">
+        Get the App
+      </a>
+                        <a class="nav_link" class="job_seeker_create_account_link" href="../sign in/jobseeker sign up/sign_up.html">
+        Create Free Account
+      </a>
+                        <a class="nav_link" class="job_seeker_support_link js_launch_solvvy" href="https://support.ziprecruiter.com/candidate#intsrc=zr.authn.header" target="_blank" rel="nofollow noopener noreferrer">
+        Job Seeker Support
+      </a>
+                    </div>
+                </section>
+
+                <section data-header-nav-section class="nav_section">
+                    <button class="nav_btn" data-header-nav-section-toggle aria-haspopup="true" aria-expanded="false">
+      <span class="text_large">Small &amp; Medium Businesses</span>
+      <span class="text_small">Small Business</span>
+    </button>
+
+                    <div class="nav_submenu">
+                        <p class="employee_count">1 - 5,000 Employees</p>
+
+                        <a class="nav_link" href="../post a job/post a job/post a job.html" title="Post jobs to multiple job boards">
+        Post a Job
+      </a>
+                        <a class="nav_link" href="/how-it-works#intsrc=zr.authn.header">
+        How it Works
+      </a>
+                        <a class="nav_link" href="/employer-reviews#intsrc=zr.authn.header">
+        Employer Reviews
+      </a>
+                        <a class="nav_link" href="/plans#intsrc=zr.authn.header">
+        Plans
+      </a>
+                        <a class="nav_link" href="/sales#intsrc=zr.authn.header">
+        New Account Help
+      </a>
+                        <a class="nav_link" href="/contact#intsrc=zr.authn.header">
+        Employer Support
+      </a>
+                        <a class="nav_link desktop_only" href="/contact#intsrc=zr.authn.header">
+        Call: <span class="phone_number">0707603053<span>
+      </a>
+                        <a class="nav_link mobile_only" href="tel:0707603053">
+        Call: <span class="phone_number">0707603053<span>
+      </a>
+                    </div>
+                </section>
+
+                <section data-header-nav-section class="nav_section">
+                    <button class="nav_btn" data-header-nav-section-toggle aria-haspopup="true" aria-expanded="false">
+      <span class="text_large">Enterprise Businesses</span>
+      <span class="text_small">Enterprise</span>
+    </button>
+
+                    <div class="nav_submenu">
+                        <p class="employee_count">
+                            5,000+ Employees
+                        </p>
+                        <a class="nav_link" href="/enterprise#intsrc=_277177">
+        Enterprise Overview
+      </a>
+                        <a class="nav_link" href="/enterprise_how_it_works#intsrc=zr.authn.header">
+        How it Works
+      </a>
+                        <a class="nav_link" href="/enterprise-customer-stories#intsrc=zr.authn.header">
+        Customer Stories
+      </a>
+                        <a class="nav_link" href="/enterprise-resources#intsrc=zr.authn.header">
+        Resource Center
+      </a>
+                        <a class="nav_link" href="/enterprise_faq#intsrc=zr.authn.header">
+        Frequently Asked Questions
+      </a>
+                        <a class="nav_link" href="/enterprise-contact-us#intsrc=zr.authn.header">
+        Request a Consultation
+      </a>
+                    </div>
+                </section>
+            </nav>
+
+
+            <a href="../post a job/post a job/post a job.html" class="post_a_job_link desktop_only">
+      Post a Job
+    </a>
+        </div>
+    </header>
+
+
+
+    <main class="content" id="main">
+
+        <div class="login_container">
+            <form id="login_form" class="login_form" action="login" method="post">
+
+
+
+                <h1 class="content_title">Job Seeker Login</h1>
+
+
+                <nav aria-label="login portal">
+                    <ul class="border_tabs">
+                        <li>
+                            <a class="tab_link" href="../sign in/sign in employer/login.html" aria-label="Login page for employers">
+              I&#39;m an Employer
+            </a>
+                        </li>
+
+                        <li class="active">
+
+                            <a class="tab_link" href="../../KAZI YAKO HUB/sign in/sign in.html" aria-current="page" aria-label="Login page for job seekers">
+              I&#39;m a Job Seeker
+            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="alternate_sign_in">
+                    <div id="google-button-app-root"></div>
+                </div>
+
+                <div class="float_label_wrapper">
+                    <label for="email">Email Address</label>
+
+                    <input type="email" id="email" name="email" value="" autofocus="1" />
+
+                </div>
+                <div class="float_label_wrapper">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+                </div>
+
+                <div class="login_links">
+                    <p class="forgot_password_link_wrapper">
+                        <a href="../sign in/forgot-password/forgot-password.html" id="forgotPasswordLink">
+            Forgot Password?
+          </a>
+                    </p>
+                </div>
+
+                <div class="submit_button_wrapper">
+                    <button class="submit_button" id="submit_button" type="submit">Job Seeker Login</button>
+                </div>
+                <input type="hidden" id="next_url" name="next_url" value="" />
+                <input type="hidden" id="referrer" name="referrer" value="" />
+                <input type="hidden" id="submitted" name="submitted" value="1" />
+
+                <input type="hidden" id="_token" name="_token" value="v1:U2FsdGVkX19tLDxux5gNREZ1-2NCkuAyLVge1cpKiPpuaMXNFpEfbKM2OnFKM7c3x8wRnr8q4Lr_WtWFmkP7Fw" />
+
+                <div class="login_links">
+                    <p class="login_link_wrapper">
+                        New to kaziyako hub?
+                        <a href="../sign in/jobseeker sign up/sign_up.html">
+            Create an account
+          </a>
+                    </p>
+                </div>
+
+                <div id="recaptcha_login"></div>
+            </form>
+        </div>
+
+
+    </main>
+
+
+    <footer class="login_footer">
+        <div class="ccpa_legal">
+            Your privacy is our priority. Learn more :
+            <a href="/ccpa-opt-out" target="_blank" title=Link opens in new window>
+      Your Privacy Choices
+    </a>
+        </div>
+        <ul class="footer_links">
+            <li class="footer_link_item">
+                <a href="https://www.ziprecruiter.global/en/privacy" target="_blank" title=Link opens in new window>Privacy Policy</a>
+            </li>
+            <li class="footer_link_item">
+                <a href="https://www.ziprecruiter.global/en/california-privacy-notice" target="_blank" title=Link opens in new window>Kenya Privacy Notice</a>
+            </li>
+            <li class="footer_link_item">
+                <a href="https://www.ziprecruiter.global/en/terms" target="_blank" title=Link opens in new window>Terms of Use</a>
+            </li>
+            <li class="footer_link_item">
+                <a href="https://www.ziprecruiter.global/en/cookie_policy" target="_blank" title=Link opens in new window>Cookie Policy</a>
+            </li>
+            <li class="footer_link_item">
+                <a href="/notices" target="_blank" title=Link opens in new window>Attribution Notices</a>
+            </li>
+            <li class="footer_link_item">
+                <a href="/corporate-responsibility" target="_blank" title=Link opens in new window>Corporate Responsibility</a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+    <script data-badge="bottomright" data-sitekey="6LftIzsUAAAAALrl2_LzkYnBF0ngWRQUtkN7bNBU" id="recaptchaScript" src="https://www.google.com/recaptcha/api.js?onload=reCaptchaLoadCallback&amp;render=explicit" defer></script>
+
+
+
+
+    <script id="js_variables" type="application/json">
+        {
+            "model": {
+                "GOOGLE_SIGNIN_CLIENT_ID": "819446331585-c45eti70acs2pmdf7eggk1i33b1vb26m.apps.googleusercontent.com",
+                "google_signin_login_method": "google_login.login",
+                "google_signin_reg_method": "google_reg.login"
+            },
+            "event": {
+                "pageviewBackendProperties": {
+                    "origin_type": "zr",
+                    "click_id_found_in_cookie": false,
+                    "request_id": "hku16wlSNsQiHSjUqAEjg9m3TKhDOZxtifjNYxfhpkXqY8DQisbn5XrcEKGkAOYM",
+                    "audience_type": "unknown",
+                    "page_type": "Login",
+                    "url_pattern": "Dmwzd9BGhti5dXD71GmgapaQLQUgtdSVxul3MxJEYU8",
+                    "request_sent_cookie": true,
+                    "http_status": 200
+                },
+                "frontendSuperProperties": {
+                    "origin_type": "zr",
+                    "click_id_found_in_cookie": false
+                },
+                "backendProperties": {
+                    "request_id": "hku16wlSNsQiHSjUqAEjg9m3TKhDOZxtifjNYxfhpkXqY8DQisbn5XrcEKGkAOYM",
+                    "audience_type": "unknown",
+                    "page_type": "Login",
+                    "url_pattern": "Dmwzd9BGhti5dXD71GmgapaQLQUgtdSVxul3MxJEYU8"
+                }
+            },
+            "translations": {
+                "LOGIN_DID_YOU_MEAN_ADDRESS_TEMPLATE": "Did you mean \u003cstrong\u003e[%address%]\u003c/strong\u003e?",
+                "LOGIN_OR": "OR",
+                "LOGIN_PLEASE_ENTER_A_PASSWORD": "Please enter a password.",
+                "LOGIN_PLEASE_ENTER_A_VALID_EMAIL_ADDRESS": "Please enter a valid email address.",
+                "NO": "No",
+                "RECAPTCHA_SCRIPT_LOAD_ERROR": "Failed loading captcha to verify you are human. You may be blocking Google servers at www.google.com or www.gstatic.com. Please check your antivirus, firewall, browser extensions, and/or proxy software.\u003cbr\u003e\u003cbr\u003eError loading captcha script = ",
+                "YES": "Yes"
+            }
+        }
+    </script>
+</body>
+
+</html>

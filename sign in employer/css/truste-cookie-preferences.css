@@ -1,0 +1,195 @@
+.zr-icon-base {
+    transform: translate(0, 0);
+    background-size: contain;
+    background-position: center;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat
+}
+
+.truste_cookie_banner[class] {
+    background: #fff;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    bottom: 20px;
+    border: 2px solid #2f3639;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 1290px
+}
+
+.truste_cookie_banner[class] #consent_blackbar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    width: 9px;
+    margin-left: 15px;
+    background-color: #ff983b;
+    border-radius: 5px
+}
+
+.truste_cookie_banner[class] .auto_banner_message {
+    max-width: 1290px;
+    padding-right: 10px
+}
+
+.truste_cookie_banner[class] #truste-consent-text {
+    margin-top: 0 !important
+}
+
+.truste_cookie_banner[class] #truste-consent-track {
+    background-color: #fff !important;
+    margin-left: 45px
+}
+
+.truste_cookie_banner[class] .truste-text {
+    color: #72777c !important
+}
+
+.truste_cookie_banner[class] #truste-show-consent {
+    color: #72777c;
+    border: 0
+}
+
+.truste_cookie_banner[class] #truste-consent-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+@media all and (max-width:767px) {
+    .truste_cookie_banner[class] #truste-consent-content {
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .truste_cookie_banner[class] #truste-consent-content #truste-consent-text,
+    .truste_cookie_banner[class] #truste-consent-content #truste-consent-buttons,
+    .truste_cookie_banner[class] #truste-consent-content .truste-text {
+        margin: 5px 0 !important;
+        text-align: left
+    }
+}
+
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons {
+    letter-spacing: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: none;
+    -webkit-appearance: none;
+    transition: background-color .1s linear, border-color .1s linear;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 2em;
+    outline: 0;
+    font-family: Arial, sans-serif;
+    color: #2f3639;
+    background: #f6f7f8 none;
+    border: 1px solid #d8dbdc;
+    max-width: 100%;
+    font-weight: 700;
+    font-weight: 400;
+    padding: 5px 15px 5px 15px;
+    line-height: 19px;
+    white-space: normal;
+    width: auto;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-right: 1em !important;
+    padding-left: 1em !important
+}
+
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons:visited {
+    color: #2f3639
+}
+
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons:active,
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons.active {
+    opacity: .7
+}
+
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons:focus,
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons:hover {
+    color: #2f3639;
+    background-color: #e3e6e8;
+    border-color: #d8dbdc;
+    text-decoration: none
+}
+
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons.disabled,
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons[disabled],
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons[disabled]:visited,
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons[disabled]:hover,
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons[disabled]:focus,
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons[disabled]:active {
+    opacity: .4;
+    box-shadow: none;
+    filter: none;
+    pointer-events: none;
+    cursor: default
+}
+
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons.disabled:focus,
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons[disabled]:focus {
+    border-color: #bfc3c4
+}
+
+.truste_cookie_banner[class] #truste-consent-buttons .truste-buttons2 {
+    background-color: transparent !important
+}
+
+.truste_cookie_banner[class] .truste-text,
+.truste_cookie_banner[class] .truste-buttons,
+.truste_cookie_banner[class] .truste-buttons2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif
+}
+
+.truste_cookie_banner[class].showing_truste_banner {
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    border: 0
+}
+
+#truste-consent-content {
+    max-height: none !important;
+    max-width: none !important
+}
+
+#truste-consent-text,
+#truste-consent-buttons {
+    margin-bottom: 0 !important
+}
+
+#truste-consent-text {
+    margin-left: 0 !important;
+    width: auto !important;
+    margin-top: 7px !important
+}
+
+@media all and (max-width:767px) {
+    #truste-consent-text {
+        float: none !important;
+        text-align: center !important;
+        display: table !important;
+        margin: 0 auto 10px !important
+    }
+}
+
+#truste-consent-buttons {
+    margin-right: 0 !important;
+    margin-top: 0 !important
+}
+
+@media all and (max-width:767px) {
+    #truste-consent-buttons {
+        float: none !important;
+        display: table !important;
+        margin: 0 auto 10px !important
+    }
+}

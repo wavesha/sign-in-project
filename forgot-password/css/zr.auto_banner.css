@@ -1,0 +1,121 @@
+.zr-icon-base {
+    transform: translate(0, 0);
+    background-size: contain;
+    background-position: center;
+    content: " ";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat
+}
+
+.auto_banners {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.5
+}
+
+@media print {
+    .auto_banners {
+        display: none
+    }
+}
+
+.auto_banner {
+    position: relative;
+    background: #fffce7;
+    box-shadow: 0 -2px 5px rgba(47, 54, 57, 0.2);
+    width: 100%;
+    padding: 20px 0 20px 0;
+    transition: opacity 250ms linear;
+    max-height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+.auto_banner.upsell {
+    background: #0e75e2;
+    color: #fff
+}
+
+.auto_banner.hiding {
+    opacity: 0
+}
+
+.auto_banner_message {
+    max-width: 1022px;
+    margin: auto;
+    padding: 0 50px 0 10px
+}
+
+.upsell .auto_banner_message {
+    max-width: 100%;
+    padding: 0 20px
+}
+
+.auto_banner_close {
+    -webkit-appearance: none;
+    border-radius: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    font: inherit;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 200%;
+    outline: 0;
+    font-weight: 400;
+    font-size: 26px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 40px;
+    opacity: .5
+}
+
+.auto_banner_close::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0
+}
+
+.auto_banner_close::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    content: "\00d7";
+    opacity: .6;
+    text-indent: 0;
+    color: #2f3639;
+    line-height: 0;
+    transition: all .15s linear;
+    text-shadow: none
+}
+
+.auto_banner_close:hover::before,
+.auto_banner_close:focus::before {
+    opacity: 1
+}
+
+.auto_banner_close:focus,
+.auto_banner_close:hover {
+    opacity: 1
+}
